@@ -1,6 +1,6 @@
 // PM2 配置文件（用于 Node.js 部署选项）
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 // 手动读取 .env 文件
 function loadEnvFile(filePath) {
@@ -22,7 +22,7 @@ function loadEnvFile(filePath) {
 
 const envVars = loadEnvFile('.env');
 
-export default {
+module.exports = {
   apps: [{
     name: 'outennis',
     script: '.output/server/index.mjs',
