@@ -7,6 +7,7 @@ module.exports = {
     exec_mode: 'cluster',
     watch: false,
     max_memory_restart: '1G',
+    env_file: '.env',  // 加载 .env 文件
     env: {
       PORT: 3000,
       HOST: '0.0.0.0',
