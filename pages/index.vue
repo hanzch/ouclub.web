@@ -453,7 +453,7 @@
                 >8218 7528</a
               >.
             </div>
-            <enquire-form-api />
+            <EnquireFormAPI />
           </div>
           <div
             class="hidden md:block md:rounded-r-[12px] w-full md:w-1/2 lg:bg-[url(@/assets/img/speak-to-us.png)] md:bg-no-repeat md:bg-center md:bg-cover"
