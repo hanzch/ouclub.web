@@ -106,7 +106,7 @@
             class="px-6 py-2 font-bold text-[17px] lg:text-[20px] rounded-full border-2 transition-all duration-300"
             :class="!isOnTop ? 'border-site-red text-site-red hover:bg-site-red hover:text-white' : 'border-white text-white hover:bg-white hover:text-site-red'"
           >
-            登录
+            LOGIN
           </a>
         </div>
         <div
@@ -127,7 +127,7 @@
             class="px-4 py-1 border-[3px] font-bold rounded-full"
             :class="!isOnTop ? 'border-site-red' : 'border-white'"
           >
-            登录
+            LOGIN
           </a>
         </div>
       </nav>
