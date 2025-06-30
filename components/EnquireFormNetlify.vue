@@ -1,0 +1,147 @@
+<template>
+  <div class="w-full">
+    <form 
+      name="enquire-form" 
+      method="POST" 
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      @submit.prevent="submit" 
+      class="grid grid-cols-1 gap-5 lg:gap-8"
+    >
+      <!-- 隐藏字段，Netlify 需要 -->
+      <input type="hidden" name="form-name" value="enquire-form" />
+      <p class="hidden">
+        <label>
+          Don't fill this out if you're human: <input name="bot-field" />
+        </label>
+      </p>
+
+      <div class="grid grid-cols-1 gap-5 lg:gap-8 lg:grid-cols-2">
+        <!-- Parent Name -->
+        <div>
+          <div class="relative">
+            <input id='fields-parent_name' type="text" name="parent_name" class="peer" placeholder=" " required/>
+            <label class="label" for="fields-parent_name">Parent's Name *</label>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div>
+          <div class="relative">
+            <input id='fields-contact' type="text" name="contact_no" class="peer" placeholder=" " required/>
+            <label class="label" for="fields-contact">Contact No. *</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-5 lg:gap-8 lg:grid-cols-2">
+        <!-- Kids Name -->
+        <div>
+          <div class="relative">
+            <input id='fields-kids_name' type="text" name="kid_name" class="peer" placeholder=" "/>
+            <label class="label" for="fields-kids_name">Kid's Name</label>
+          </div>
+        </div>
+        <!-- Age -->
+        <div>
+          <div class="relative">
+            <input id='fields-age' type="number" name="age" class="peer" placeholder=" "/>
+            <label class="label" for="fields-age">Age</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 gap-5 lg:gap-8 lg:grid-cols-2">
+        <!-- Preferred Day -->
+        <div>
+          <div class="relative">
+            <input type="date" name="preferred_day" id='fields-preferred_day' class="peer" placeholder=" ">
+            <label class="label" for="fields-preferred_day">Preferred Day</label>
+          </div>         
+        </div>
+        <!-- Time -->
+        <div>
+          <div class="relative">
+            <input type="time" name="time" id='fields-time' class="peer" placeholder=" ">
+            <label class="label" for="fields-time">Time </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div>
+          <div class="relative">
+            <input id='fields-email' type="email" name="email" class="peer" placeholder=" " required/>
+            <label class="label" for="fields-email">Email *</label>
+          </div>
+        </div>
+      <!-- Message -->
+      <div>
+        <div class="relative">
+          <textarea id='fields-message' rows="3" class="peer" name="message" placeholder=" "></textarea>
+          <label class="label" for="fields-message">Message</label>
+        </div>
+      </div>
+
+      <input type="hidden" name="_domain" value="outennis.temp-link.com">
+      
+      <div class="text-left">
+        <button type="submit" class="ou-button group">
+          <ou-button>Submit</ou-button>
+        </button>
+      </div>
+    </form>
+  </div>
+</template>
+
+<script setup>
+const submit = async (event) => {
+  const form = event.target
+  const formData = new FormData(form)
+  
+  try {
+    // Netlify Forms 会自动处理表单提交
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+    
+    // 成功后跳转
+    await navigateTo('/thank-you')
+  } catch (error) {
+    console.error('Form submission error:', error)
+    alert('提交失败，请稍后重试')
+  }
+}
+</script>
+
+<style scoped>
+input, textarea, select {
+  @apply block px-2.5 pb-2.5 pt-4 w-full bg-[#F8F4EA] rounded-[6px] border-[1px] border-[#BFB39C] appearance-none focus:outline-none focus:ring-0 focus:border-[#ac9872];
+}
+
+.label {
+  @apply absolute duration-200 transform -translate-y-4 scale-75 top-1 z-[9] origin-[0] bg-[#F8F4EA] px-2 peer-focus:px-2 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-[26px] peer-focus:top-1 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1;
+}
+
+.am-button.disabled {
+  @apply bg-slate-50 text-slate-500;
+}
+
+.error input,
+.error textarea {
+  @apply text-red-400 placeholder-red-400 border-red-400;
+}
+
+.error label {
+  @apply text-red-400;
+}
+
+.error .error-message {
+  @apply text-sm text-red-400;
+}
+
+.hidden {
+  display: none;
+}
+</style>
