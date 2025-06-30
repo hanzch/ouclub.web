@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[url(~/assets/img/bg4.jpg)] bg-no-repeat bg-cover bg-center ou-section-py"
+    class="bg-[url(@/assets/img/bg4.jpg)] bg-no-repeat bg-cover bg-center ou-section-py"
   >
     <div class="my-8 ou-container">
       <h1 class="text-center section-title mb-8 lg:mb-10 text-[#882214]">
@@ -25,27 +25,27 @@
 
                 <div class="flex items-center py-1 space-x-1">
                   <img
-                    src="~/assets/img/star.svg"
+                    src="@/assets/img/star.svg"
                     alt="star"
                     class="inline-block w-6 h-6"
                   />
                   <img
-                    src="~/assets/img/star.svg"
+                    src="@/assets/img/star.svg"
                     alt="star"
                     class="inline-block w-6 h-6"
                   />
                   <img
-                    src="~/assets/img/star.svg"
+                    src="@/assets/img/star.svg"
                     alt="star"
                     class="inline-block w-6 h-6"
                   />
                   <img
-                    src="~/assets/img/star.svg"
+                    src="@/assets/img/star.svg"
                     alt="star"
                     class="inline-block w-6 h-6"
                   />
                   <img
-                    src="~/assets/img/star.svg"
+                    src="@/assets/img/star.svg"
                     alt="star"
                     class="inline-block w-6 h-6"
                   />

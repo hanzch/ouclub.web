@@ -8,7 +8,7 @@
       <div class="my-8">
         <div class="w-full">
           <img
-            src="~/assets/img/coach.jpg"
+            src="@/assets/img/coach.jpg"
             alt="XuanShuo Ou Profile"
             class="lg:float-left w-full lg:mr-8 xl:mr-12 2xl:mr-16 mb-8 lg:max-w-[500px] rounded-[12px]"
           />
@@ -90,7 +90,7 @@
 
   <!--  Our Tennis Programmes-->
   <section
-    class="bg-[url(~/assets/img/bg1.png)] bg-no-repeat bg-cover bg-center"
+    class="bg-[url(@/assets/img/bg1.png)] bg-no-repeat bg-cover bg-center"
     id="programmes"
   >
     <div class="ou-container ou-section-py">
@@ -114,19 +114,19 @@
             </h2>
             <div class="mb-6 space-y-3 list-disc ld:mb-8">
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Children’s Beginner Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Children’s Advanced Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Adult Beginner Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Adult Advanced Course</span>
               </div>
             </div>
@@ -148,19 +148,19 @@
             </h2>
             <div class="mb-6 space-y-3 list-disc ld:mb-8">
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Children’s Beginner Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Children’s Advanced Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Adult Beginner Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Adult Advanced Course</span>
               </div>
             </div>
@@ -181,19 +181,19 @@
             </h2>
             <div class="mb-6 space-y-3 list-disc ld:mb-8">
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Children’s Beginner Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Children’s Advanced Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Adult Beginner Course</span>
               </div>
               <div class="flex items-center space-x-2.5">
-                <img src="~/assets/img/tick.svg" class="size-6" alt="tick icon" />
+                <img src="@/assets/img/tick.svg" class="size-6" alt="tick icon" />
                 <span>Adult Advanced Course</span>
               </div>
             </div>
@@ -247,7 +247,7 @@
         <div class="py-5 lg:py-8 group">
           <div class="flex justify-center">
             <img
-              src="~/assets/img/world-class-coaching.svg"
+              src="@/assets/img/world-class-coaching.svg"
               alt="World-Class Coaching"
               lazy
               class="all-transition size-16 hover:rotate-6 group-hover:rotate-6 md:size-18 lg:size-20 xl:size-24"
@@ -262,7 +262,7 @@
         <div class="py-5 lg:py-8 group">
           <div class="flex justify-center">
             <img
-              src="~/assets/img/comprehensive-programs.svg"
+              src="@/assets/img/comprehensive-programs.svg"
               alt="Comprehensive Programs"
               lazy
               class="all-transition size-16 hover:rotate-6 group-hover:rotate-6 md:size-18 lg:size-20 xl:size-24"
@@ -278,7 +278,7 @@
         <div class="py-5 lg:py-8 group">
           <div class="flex justify-center">
             <img
-              src="~/assets/img/proven-track-record.svg"
+              src="@/assets/img/proven-track-record.svg"
               alt="Proven Track Record"
               lazy
               class="all-transition size-16 hover:rotate-6 group-hover:rotate-6 md:size-18 lg:size-20 xl:size-24"
@@ -293,7 +293,7 @@
         <div class="py-5 lg:py-8 group">
           <div class="flex justify-center">
             <img
-              src="~/assets/img/state-of-the-art-facilities.svg"
+              src="@/assets/img/state-of-the-art-facilities.svg"
               alt="State-of-the-Art Facilities"
               lazy
               class="all-transition size-16 hover:rotate-6 group-hover:rotate-6 md:size-18 lg:size-20 xl:size-24"
@@ -308,7 +308,7 @@
         <div class="py-5 lg:py-8 group">
           <div class="flex justify-center">
             <img
-              src="~/assets/img/personalized-attention-and-communication.svg"
+              src="@/assets/img/personalized-attention-and-communication.svg"
               alt="Personalized Attention and Communication"
               lazy
               class="all-transition size-16 hover:rotate-6 group-hover:rotate-6 md:size-18 lg:size-20 xl:size-24"
@@ -432,7 +432,7 @@
 
   <!-- enquire form -->
   <section
-    class="w-full bg-[url(~/assets/img/ground.png)] bg-no-repeat bg-cover bg-center"
+    class="w-full bg-[url(@/assets/img/ground.png)] bg-no-repeat bg-cover bg-center"
     id="enquire"
   >
     <div class="ou-section-py">
@@ -456,10 +456,10 @@
             <enquire-form-api />
           </div>
           <div
-            class="hidden md:block md:rounded-r-[12px] w-full md:w-1/2 lg:bg-[url(~/assets/img/speak-to-us.png)] md:bg-no-repeat md:bg-center md:bg-cover"
+            class="hidden md:block md:rounded-r-[12px] w-full md:w-1/2 lg:bg-[url(@/assets/img/speak-to-us.png)] md:bg-no-repeat md:bg-center md:bg-cover"
           >
             <img
-              src="~/assets/img/speak-to-us.png"
+              src="@/assets/img/speak-to-us.png"
               alt="Speak to Us"
               class="md:hidden"
             />

@@ -2,10 +2,10 @@
   <div class="w-full bg-white">
     <footer class="ou-container ou-section-py">
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8 xl:gap-12">
-        <div class="bg-[url(~/assets/img/coach.jpg)] rounded-[12px] bg-no-repeat bg-center bg-cover"></div>
+        <div class="bg-[url(@/assets/img/coach.jpg)] rounded-[12px] bg-no-repeat bg-center bg-cover"></div>
         <div class="">
           <div class="flex justify-center lg:justify-start">
-            <img src="~/assets/img/logo.png" alt="OU Tennis Club" class="h-[85px] md:h-[120px] mb-6">
+            <img src="@/assets/img/logo.png" alt="OU Tennis Club" class="h-[85px] md:h-[120px] mb-6">
           </div>
 
           <h2 class="text-[20px] lg:text-[25px] font-semibold mb-8 lg:mb-10">Contact Information:</h2>

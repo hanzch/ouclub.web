@@ -65,14 +65,14 @@
 </template>
 
 <script setup>
-import p1 from "~/assets/img/products/product-01.jpg";
-import p2 from "~/assets/img/products/product-02.jpg";
-import p3 from "~/assets/img/products/product-03.jpg";
-import p4 from "~/assets/img/products/product-04.jpg";
-import p5 from "~/assets/img/products/product-05.jpg";
-import p6 from "~/assets/img/products/product-06.jpg";
-import p7 from "~/assets/img/products/product-07.jpg";
-import p8 from "~/assets/img/products/product-08.jpg";
+import p1 from "@/assets/img/products/product-01.jpg";
+import p2 from "@/assets/img/products/product-02.jpg";
+import p3 from "@/assets/img/products/product-03.jpg";
+import p4 from "@/assets/img/products/product-04.jpg";
+import p5 from "@/assets/img/products/product-05.jpg";
+import p6 from "@/assets/img/products/product-06.jpg";
+import p7 from "@/assets/img/products/product-07.jpg";
+import p8 from "@/assets/img/products/product-08.jpg";
 
 const products = ref([
   {

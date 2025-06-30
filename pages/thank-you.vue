@@ -6,7 +6,7 @@
 
       <div class="flex justify-center lg:pb-[50px] pb-[30px]">
         <img
-              src="~/assets/img/logo.png"
+              src="@/assets/img/logo.png"
               alt="OU Tennis Club"
               class="h-12 md:h-[80px]"
             />

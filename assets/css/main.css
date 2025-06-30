@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html, body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    font-family: 'Poppins', 'sans-serif';
+    background: #f4f4f4;
+    max-width: 2560px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+.all-transition {
+    @apply transition-all duration-200 ease-in-out;
+}
+
+@layer components {
+    .ou-container{
+        @apply max-w-[1536px] px-6 mx-auto;
+    }
+
+    .section-title {
+        @apply transition-all duration-200 ease-linear font-semibold text-[clamp(1.75rem,0.768rem+2.619vw,3.125rem)] font-SortsMillGoudy;
+    }
+
+    .ou-button {
+        @apply transition-all duration-200 ease-linear rounded-full px-6 py-3 lg:px-10 lg:py-5 leading-none font-semibold bg-[#d9e243] text-site-red hover:bg-[#c9d03d] hover:ring-4 md:text-[18px] lg:text-[20px];
+        @apply disabled:bg-gray-300 disabled:text-white disabled:ring-0; 
+    }
+
+    .ou-section-py {
+        @apply transition-all duration-200 ease-linear py-10 lg:py-12 xl:py-[75px];
+    }
+
+}

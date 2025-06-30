@@ -14,7 +14,7 @@
             class="inline-block px-4 py-3 bg-white rounded-full lg:px-8 lg:py-4"
           >
             <img
-              src="~/assets/img/logo.png"
+              src="@/assets/img/logo.png"
               alt="OU Tennis Club"
               class="transition-all duration-150"
               :class="!isOnTop ? 'h-10 md:h-[70px]' : 'h-12 md:h-[80px]'"

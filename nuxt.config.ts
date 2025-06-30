@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   },
   components: [{path: '~/components', pathPrefix: false}],
 
-  css: ['~/assets/css/main.css',  ],
+  css: ['@/assets/css/main.css'],
 
   plugins: [
   ],
@@ -64,6 +64,18 @@ export default defineNuxtConfig({
 
   devServer: {
     host: '0.0.0.0'
+  },
+
+  nitro: {
+    minify: false
+  },
+
+  vite: {
+    server: {
+      fs: {
+        strict: false
+      }
+    }
   },
 
 })
